@@ -17,7 +17,7 @@ export default function ProductListItem(props) {
       <div>$ {props.product.price}</div>
       <div>
         <button onClick={() => props.addToCart(props.product)}>
-          Add to Cart({(thisItemInCart && thisItemInCart.quantity) || 0})
+          Add to cart({(thisItemInCart && thisItemInCart.quantity) || 0})
         </button>
       </div>
     </div>
