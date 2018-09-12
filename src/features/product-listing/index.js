@@ -7,7 +7,8 @@ function ProductList(props) {
   return (
     <div className="product-listing">
       {props.products.map(product => (
-        <ProductListItem
+        <ProductListItem 
+          key = {product.id}
           product={product}
           addToCart={props.addToCart}
           removeFromCart={props.removeFromCart}
