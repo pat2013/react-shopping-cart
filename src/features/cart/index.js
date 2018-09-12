@@ -15,7 +15,7 @@ function Cart(props) {
   return (
     <div className="cart">
       {cartItemsWithQuantities(props.cart).map(item => (
-        <div>
+        <div key = {item.id}>
           {item.name} - {item.price} - {item.quantity}
         </div>
       ))}
